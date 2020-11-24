@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passages Index</title>
+</head>
+<body>
+  <h1>Passages</h1>
+  <% passages.forEach(function (p) { %>
+    <h2><%= p.title %></h2>
+    <p>
+      <span><%= p.author %></span>, <span><%= p.source %></span>
+    </p>
+  <% }); %>
+</body>
+</html>
